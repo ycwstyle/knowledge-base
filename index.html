@@ -842,7 +842,7 @@
 		
 		//设置网页版权信息
 		const copyDom = document.getElementById('copytimediv')
-		const setCopyStr = String(fullYear)==='2026'?'2026':`2026-${fullYear}`
+		const setCopyStr = fullYear<=2026?'2026':`2026-${fullYear}`
 		copyDom.innerHTML = `CKY Copyright&copy;${setCopyStr}`
 		
 		//首次加载当前时间
